@@ -1,0 +1,16 @@
+# Configuration
+wp-config.php
+wp-config-local.php
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Example plugin
+/wp-content/plugins/hello.php
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+.htaccess
