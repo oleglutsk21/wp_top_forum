@@ -1,0 +1,68 @@
+.our-clients {
+    background-color: $bg-color-gray;
+}
+.our-clients__inner {
+    padding-block: 35px 70px;
+    // padding-inline: 50px;
+}
+.our-clients__title {
+    margin-block-end: 25px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $text-color-black;
+    text-align: center;
+    text-transform: uppercase;
+}
+.our-clients__slider-item {
+    padding-inline: 25px;
+    aspect-ratio: 3/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: $white;
+    margin-inline: 5px;
+    &:hover {
+        background-color: $bg-color-yellow;
+    }
+}
+.our-clients__item-image {
+    width: 100%;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.our-clients__slider-wrapper {
+    position: relative;
+}
+.our-clients__slider-arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 107.6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.our-clients__slider-arrow {
+    padding: 0;
+    background: none;
+    border: 0;
+    &:hover .our-clients__slider-arrow-icon path {
+        fill: #323232;
+    }
+}
+/* Slick */
+.slick-slider {
+    min-width: 0;
+}
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+.slick-list {
+    overflow: hidden;
+}

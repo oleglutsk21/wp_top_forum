@@ -1,0 +1,105 @@
+.sponsors__inner {
+    padding-block: 50px 65px;
+}
+
+.sponsors__page-title {
+    @include h1-title;
+    margin-block-end: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sponsors__page-description {
+    @include page-description;
+    margin-block-end: 40px;
+    text-align: center;
+    p:last-child {
+        margin-block-end: 0;
+    }
+}
+.sponsors__filter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 47px;
+}
+.sponsors__filter-label {
+    margin-block-end: 22px;
+    font-size: 17px;
+    font-weight: 500;
+    color: $text-color-black;
+    text-transform: uppercase;
+}
+.sponsors__filter-select {
+    display: none;
+}
+.nice-select.sponsors__filter-select {
+    @include select-list-nice-select;
+    width: 100%;
+    max-width: 450px;
+    float: none;
+    clear: unset;
+}
+
+.sponsors__teasers {
+    max-width: 815px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 65px;
+    @include media-breakpoint-down(lg) {
+        column-gap: 10%;
+    }
+}
+.sponsors__teasers-item {
+    width: 32%;
+    @include media-breakpoint-down(lg) {
+        width: 45%;
+    }
+    @include media-breakpoint-down(sm-480) {
+        width: 100%;
+    }
+}
+.sponsors__teaser-category {
+    @include h2-title;
+    margin-block-end: 20px;
+    color: $text-color-secondary;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sponsors__teaser-image-wrapper {
+    margin-block-end: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    aspect-ratio: 13/8;
+    border: 1px solid rgba(243, 235, 218, 1);
+}
+.sponsors__teaser-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+.sponsors__teaser-name {
+    @include h5-title;
+    margin-block-end: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sponsors__teaser-description {
+    @include teaser-description;
+    text-align: center;
+    margin-block-end: 15px;
+    p:last-child {
+        margin-block-end: 0;
+    }
+}
+.sponsors__teaser-link {
+    @include button-link;
+    margin-inline: auto;
+}

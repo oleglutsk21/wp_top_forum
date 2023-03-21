@@ -1,0 +1,119 @@
+.footer {
+    margin-block-start: auto;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: $bg-color-black;
+    color: $white;
+}
+.footer__inner {
+    padding-block-start: 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.footer__menu {
+    min-width: 180px;
+    min-height: 210px;
+    border-inline-end: 1px solid $border-color;
+    @include media-breakpoint-down(md) {
+        min-height: 160px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        min-height: 150px;
+        text-align: center;
+        border-inline-end: 0;
+        border-block-end: 1px solid $border-color;
+    }
+}
+.footer__menu-items {
+    margin: 0;
+    padding-inline: 15px;
+    color: $text-color-secondary;
+    text-transform: uppercase;
+}
+.footer__menu-item {
+    .footer__menu-link {
+        color: $color-white;
+        text-transform: capitalize;
+        &:hover {
+            color: $text-color-secondary;
+        }
+    }
+}
+.footer__menu-link {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        color: $text-color-secondary;
+    }
+}
+.footer__contact-info {
+    padding-inline: 45px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include media-breakpoint-down(md) {
+        padding-inline-start: 25px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-inline: 0;
+    }
+    & a {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+            color: $text-color-secondary;
+        }
+    }
+    & .footer__contact-email {
+        text-decoration: underline;
+    }
+}
+.footer__contact-title {
+    color: $text-color-secondary;
+    text-transform: uppercase;
+}
+
+.footer__button-link {
+    margin-inline: auto 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $text-color-secondary;
+    @include media-breakpoint-down(md) {
+        margin-inline: auto;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        text-align: center;
+    }
+    &:hover {
+        color: $white;
+    }
+}
+.footer__copyright {
+    width: 100%;
+    padding: 25px 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    border-top: 1px solid $border-color;
+    @include media-breakpoint-down(md) {
+        justify-content: center;
+    }
+}
+.footer__copyright-text {
+    padding-inline-end: 15px;
+    @include media-breakpoint-down(md) {
+        padding-inline-end: 0;
+        text-align: center;
+    }
+}
+.footer__copyright-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}

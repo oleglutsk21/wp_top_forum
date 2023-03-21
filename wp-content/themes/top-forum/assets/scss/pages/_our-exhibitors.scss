@@ -1,0 +1,128 @@
+.exhibitors__inner {
+    padding-block: 50px 78px;
+}
+
+.exhibitors__page-title {
+    @include h1-title;
+    margin-block-end: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.exhibitors__page-description {
+    @include page-description;
+    margin-block-end: 40px;
+    text-align: center;
+
+    p:last-child {
+        margin-block-end: 0;
+    }
+}
+
+.exhibitors__filter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 47px;
+}
+
+.exhibitors__filter-label {
+    margin-block-end: 22px;
+    font-size: 17px;
+    font-weight: 500;
+    color: $text-color-black;
+    text-transform: uppercase;
+}
+
+.exhibitors__filter-select {
+    display: none;
+}
+
+.nice-select.exhibitors__filter-select {
+    @include select-list-nice-select;
+    width: 100%;
+    max-width: 450px;
+    float: none;
+    clear: unset;
+}
+
+.exhibitors__teasers {
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 2.6%;
+    row-gap: 70px;
+    @include media-breakpoint-down(xl) {
+        column-gap: 5%;
+    }
+
+    @include media-breakpoint-down(lg) {
+        column-gap: 10%;
+    }
+}
+
+.exhibitors__teasers-item {
+    width: 23%;
+
+    @include media-breakpoint-down(xl) {
+        width: 30%;
+    }
+
+    @include media-breakpoint-down(lg) {
+        width: 45%;
+    }
+
+    @include media-breakpoint-down(sm-480) {
+        width: 100%;
+    }
+}
+
+.exhibitors__teaser-category {
+    @include h2-title;
+    margin-block-end: 20px;
+    color: $text-color-secondary;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.exhibitors__teaser-image-wrapper {
+    margin-block-end: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    aspect-ratio: 13/8;
+    border: 1px solid rgba(243, 235, 218, 1);
+}
+
+.exhibitors__teaser-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+
+.exhibitors__teaser-name {
+    @include h5-title;
+    margin-block-end: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.exhibitors__teaser-description {
+    @include teaser-description;
+    text-align: center;
+    margin-block-end: 15px;
+
+    p:last-child {
+        margin-block-end: 0;
+    }
+}
+
+.exhibitors__teaser-link {
+    @include button-link;
+    margin-inline: auto;
+}

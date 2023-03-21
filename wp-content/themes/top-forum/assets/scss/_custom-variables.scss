@@ -1,0 +1,41 @@
+/* Bootstrap variables */
+/* disable !important rule */
+$enable-important-utilities:  false !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  xsm: 400px,
+  sm-480: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1080px,
+  xxl: 1170px
+) !default;
+$container-padding-x: 30px !default;
+
+$font-family-base: 'Roboto', sans-serif;
+
+
+$text-color-black: #323232;
+$text-color-gray: #757575;
+$text-color-secondary: #C99C47;
+$color-white: #FFFFFF;
+$bg-color-black: rgba(50, 50, 50, 1);
+$bg-color-gray: rgba(232, 216, 182, 0.3);
+$bg-color-gray-secondary: rgba(112, 112, 112, 0.5);
+$bg-color-gray-primary :rgba(214, 214, 214, 1);
+$bg-color-yellow: #D4C198;
+$bg-color-secondary: #C99C47;
+$bg-color-black: #323232;
+$bg-color-white: #FFFFFF;
+$border-color: rgba(112, 112, 112, 0.9);
+$border-color-secondary: #C99C47;

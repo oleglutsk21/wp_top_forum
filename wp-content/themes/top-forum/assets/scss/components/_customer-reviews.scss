@@ -1,0 +1,107 @@
+.customer-reviews {
+    background-color: $bg-color-gray;
+}
+.customer-reviews__inner {
+    padding-block: 45px 60px;
+}
+.customer-reviews__title {
+    margin-block-end: 25px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $text-color-black;
+    text-align: center;
+    text-transform: uppercase;
+}
+.customer-reviews__slider-wrapper {
+    position: relative;
+}
+.customer-reviews__slider-item {
+    max-width: 545px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 40px;
+    text-decoration: none;
+    color: $text-color-black;
+    margin-right: 25px;
+    &:hover {
+        color: $text-color-secondary;
+    }
+}
+.customer-reviews__image-wrapper {
+    min-width: 120px;
+    width: 120px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.customer-reviews__item-image {
+    width: 100%;
+}
+.customer-reviews__item-info {
+    width: 70%;
+    padding-inline: 25px;
+    padding-block: 25px 40px;
+    position: relative;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 7px;
+}
+.customer-reviews__info-name {
+    font-size: 17px;
+    line-height: 24px;
+}
+.customer-reviews__info-date {
+    padding: 8px 22px 8px 16px;
+    font-size: 9px;
+    line-height: 24px;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $bg-color-gray-secondary;
+    border-radius: 2px;
+}
+.customer-reviews__info-text {
+    font-size: 14px;
+    line-height: 22px;
+}
+.customer-reviews__info-arrow {
+    width: 30px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 17%;
+    left: 0;
+    z-index: -10;
+    background-color: $white;
+    transform: translateX(-50%) rotate(45deg);
+}
+.customer-reviews {
+    & .slick-track {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }  
+}
+.customer-reviews__slider-arrow {
+    padding: 0;
+    background: none;
+    border: 0;
+    &:hover .customer-reviews__slider-arrow-icon path {
+        fill: #323232;
+    }
+}
+.customer-reviews__slider-arrow-left {
+    position: absolute;
+    top: 20%;
+    left: -3%;
+}
+.customer-reviews__slider-arrow-right {
+    position: absolute;
+    top: 20%;
+    right: -3%;
+}

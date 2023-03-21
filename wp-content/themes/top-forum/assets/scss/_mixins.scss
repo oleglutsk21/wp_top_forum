@@ -1,0 +1,100 @@
+@mixin h1-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: $text-color-black;
+}
+@mixin h2-title {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+@mixin h5-title {
+    font-size: 17px;
+    font-weight: 500;
+    color: $text-color-black;
+}
+
+@mixin page-description {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 26px;
+    color: $text-color-black;
+}
+@mixin teaser-description {
+    font-size: 14px;
+    font-weight: 300;
+    color: $text-color-black;   
+}
+@mixin load-more-button {
+    display: block;
+    padding: 14px 25px;
+    font-size: 13px;
+    font-weight: 400;
+    color: $color-white;
+    background-color: RGBA(212, 193, 152, 1);
+    &:hover {
+        background-color: RGBA(201, 156, 71, 1);
+    }
+}
+@mixin button-link {
+    width: fit-content;
+    display: block;
+    padding: 14px 28px;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $color-white;
+    background-color: RGBA(212, 193, 152, 1);
+    &:hover {
+        color: $color-white;
+        background-color: RGBA(201, 156, 71, 1);
+    }
+}
+@mixin select-list-nice-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 12px 20px 18px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #606060;
+    border-color: RGBA(243, 235, 218, 1);
+    border-radius: 1px;
+    height: auto;
+      &::after {
+        content: url(./../images/icons/arrow_down.svg);
+        width: auto;
+        height: auto;
+        border: 0;
+        transform: translate(0px, 2px);
+        position: static;
+      }
+      &.open::after {
+        transform: translate(-7px, -4px) rotate(180deg);
+      }
+      &.open .list {
+        border: 1px solid RGBA(243, 235, 218, 1);
+        border-radius: 1px;
+      }
+    .current {
+        padding: 0;
+        background-color: transparent;
+        &::before {
+            content: none;
+        }
+    }
+    .list {
+        margin: 0;
+        background-color: inherit;
+        box-shadow: none;
+        width: 100%;
+        .option {
+            padding: 20px 12px 20px 18px;
+            font-size: 14px;
+            line-height: 20px;
+            &:hover {
+                
+            }
+        }
+    }
+}

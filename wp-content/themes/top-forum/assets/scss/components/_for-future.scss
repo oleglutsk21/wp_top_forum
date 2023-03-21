@@ -1,0 +1,106 @@
+.for-future__inner {
+    padding-block: 60px 50px;
+}
+.for-future__overview {
+    font-size: 17px;
+    line-height: 30px;
+}
+.for-future__items {
+    padding-block: 35px;
+    display: flex;
+    column-gap: 30px;
+}
+.for-future__item {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 20px;
+}
+.for-future__image-wrapper {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    border: 1px solid $border-color-secondary;
+    border-radius: 50%;
+}
+.for-future__image {
+    max-width: 70%;
+}
+.for-future__info-title {
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.for-future__info-text {
+    font-size: 15px;
+    line-height: 24px;
+}
+.for-future__links {
+    margin-block-start: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+.for-future__info-link {
+    padding: 10px 25px;
+    font-size: 13px;
+    line-height: 24px;
+    color: $white;
+    text-decoration: none;
+    background-color: $bg-color-yellow;
+    &:hover {
+        color: $white;
+        background-color: $bg-color-secondary;
+    }
+}
+.for-future__info-event {
+    font-size: 11px;
+    line-height: 24px;
+}
+.for-future__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+.for-future__link-register {
+    padding: 12px 25px;
+    min-width: 155px;
+    font-size: 13px;
+    line-height: 24px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $bg-color-secondary;
+    border: 0;
+    &:hover {
+        color: $white;
+        background-color: $bg-color-yellow;
+    }
+}
+.for-future__button-subscribe {
+    padding: 12px 25px;
+    min-width: 155px;
+    font-size: 13px;
+    line-height: 24px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $bg-color-black;
+    border: 0;
+    & .for-future__link-subscribe {
+        color: $white;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: $bg-color-gray-secondary;
+    }
+}
