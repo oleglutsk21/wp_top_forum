@@ -14,3 +14,14 @@ wp-config-local.php
 # htaccess
 /.htaccess
 .htaccess
+
+# WP-CLI deploy tool
+deploy/**
+/wp-cli.yml
+
+.idea/
+.DS_Store
+wp-cli.phar
+**/.vscode/**
+*.map
+.docksal
