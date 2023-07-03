@@ -7452,7 +7452,7 @@ ul {
 }
 
 .header__menu-item {
-  padding-block: 20px;
+  padding-block: 11px;
   position: relative;
 }
 
@@ -7523,7 +7523,14 @@ ul {
           border-block-end: 1px solid rgba(112, 112, 112, 0.9);
 }
 
-.header-top__button {
+.header-top__button-link {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #757575;
+  text-decoration: none;
+  text-transform: uppercase;
   margin-block: 10px;
   padding: 12px 25px;
   min-width: 155px;
@@ -7534,22 +7541,9 @@ ul {
   transition: all 0.3s ease-in-out;
 }
 
-.header-top__button:hover {
+.header-top__button-link:hover {
+  color: #757575;
   background-color: #C99C47;
-}
-
-.header-top__button:hover .header-top__button-link {
-  color: #757575;
-}
-
-.header-top__button-link {
-  display: block;
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 700;
-  color: #757575;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .header-bottom {
@@ -7638,12 +7632,20 @@ ul {
 }
 
 .header-bottom__menu-link-icon {
+  width: 100%;
   display: block;
 }
 
-.header-bottom__button {
+.header-bottom__button-link {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
   grid-area: button;
-  padding: 9px 20px;
+  padding: 15px 20px;
   -webkit-margin-start: auto;
           margin-inline-start: auto;
   min-width: 155px;
@@ -7654,21 +7656,9 @@ ul {
   transition: all 0.3s ease-in-out;
 }
 
-.header-bottom__button:hover {
+.header-bottom__button-link:hover {
   background-color: #D4C198;
-}
-
-.header-bottom__button:hover .header-bottom__button-link {
   color: #fff;
-}
-
-.header-bottom__button-link {
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 .banner__slider {
@@ -18451,7 +18441,7 @@ ul {
   .header-bottom__inner {
     -webkit-padding-after: 20px;
             padding-block-end: 20px;
-    grid-template-areas: 'logo button' 'menu menu';
+    grid-template-areas: 'logo button' 'menu menu';
     grid-template-columns: 1fr 1fr;
   }
 
@@ -18942,7 +18932,7 @@ ul {
   }
 
   .header-bottom__inner {
-    grid-template-areas: 'logo' 'button' 'menu';
+    grid-template-areas: 'logo' 'button' 'menu';
     grid-template-columns: 1fr;
   }
 
@@ -18960,7 +18950,7 @@ ul {
     width: 100%;
   }
 
-  .header-bottom__button {
+  .header-bottom__button-link {
     -webkit-margin-start: 0;
             margin-inline-start: 0;
   }

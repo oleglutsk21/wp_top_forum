@@ -75,7 +75,7 @@
     justify-content: flex-start;
 }
 .header__menu-item {
-    padding-block: 20px;
+    padding-block: 11px;
     position: relative;
     &:last-child .header__menu-item-link {
         border-inline-end: 0;
@@ -137,18 +137,7 @@
 }
 
 .header-top__button {
-    margin-block: 10px;
-    padding: 12px 25px;
-    min-width: 155px;
-    border: 0;
-    background-color: #E8D8B6;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-        background-color: $bg-color-secondary; 
-        .header-top__button-link {
-            color: $text-color-gray;
-        }  
-    } 
+
     
 }
 .header-top__button-link {
@@ -159,6 +148,16 @@
     color: $text-color-gray;
     text-decoration: none;
     text-transform: uppercase;
+    margin-block: 10px;
+    padding: 12px 25px;
+    min-width: 155px;
+    border: 0;
+    background-color: #E8D8B6;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $text-color-gray;
+        background-color: $bg-color-secondary;
+    }
 }
 .header-bottom {
     border-block-end: 2px solid rgba(50, 50, 50, 0.5);
@@ -243,11 +242,20 @@
     border: 1px solid $border-color;
 }
 .header-bottom__menu-link-icon {
+    width: 100%;
     display: block;
 }
-.header-bottom__button {
+
+.header-bottom__button-link {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
     grid-area: button;
-    padding: 9px 20px;
+    padding: 15px 20px;
     margin-inline-start: auto;
     min-width: 155px;
     border: 0;
@@ -258,17 +266,6 @@
     }
     &:hover {
         background-color: #D4C198;
-        .header-bottom__button-link {
-            color: #fff;
-        }
+        color: #fff;
     }
-
-}
-.header-bottom__button-link {
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $color-white;
 }
