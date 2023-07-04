@@ -33,7 +33,6 @@
 				<?php
 				wp_nav_menu(
 					array(
-						'menu'            => 'header_main_menu',
 						'menu_class'      => 'header__menu-items',
 						'container'       => 'nav',
 						'container_class' => 'header__nav-menu',
@@ -76,7 +75,6 @@
 				<?php
 				wp_nav_menu(
 					array(
-						'menu'            => 'secondary_menu',
 						'menu_class'      => 'header-bottom__menu-items',
 						'container'       => 'div',
 						'container_class' => 'header-bottom__menu',

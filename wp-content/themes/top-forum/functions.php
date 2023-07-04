@@ -44,6 +44,11 @@ function change_menu_item_css_classes( $classes, $item, $args, $depth ): mixed {
 			$classes[] = 'header-bottom__menu-item';
 		};
 	}
+	if ( 'footer' === $args->theme_location ) {
+		if ( 0 === $depth ) {
+			$classes[] = 'footer__menu-item';
+		};
+	}
 
 	return $classes;
 }
@@ -82,6 +87,12 @@ function top_forum_nav_menu_link_attributes( $atts, $item, $args, $depth ): mixe
 	if ( 'header_secondary' === $args->theme_location ) {
 		if ( 0 === $depth ) {
 			$class = 'header-bottom__menu-item-link';
+		};
+		$atts['class'] = isset( $atts['class'] ) ? "{$atts['class']} $class" : $class;
+	};
+	if ( 'footer' === $args->theme_location ) {
+		if ( 0 === $depth ) {
+			$class = 'footer__menu-link';
 		};
 		$atts['class'] = isset( $atts['class'] ) ? "{$atts['class']} $class" : $class;
 	};

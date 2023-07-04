@@ -27,3 +27,6 @@ wp-cli.phar
 .docksal
 
 **/node_modules/**
+/vendor/
+/composer.json
+/composer.lock

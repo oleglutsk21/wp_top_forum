@@ -9653,6 +9653,11 @@ ul {
   text-transform: uppercase;
 }
 
+.footer__contact-address {
+  -webkit-margin-after: 25px;
+          margin-block-end: 25px;
+}
+
 .footer__button-link {
   margin-inline: auto 15px;
   text-transform: uppercase;
